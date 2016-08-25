@@ -1,0 +1,23 @@
+{
+  "name": "cordova-plugin-android-build",
+  "version": "1.0.0",
+  "description": "Cordova Plugin for Android Build",
+  "cordova": {
+    "id": "cordova-plugin-android-build",
+    "platforms": [
+      "android",
+      "browser"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/archriss/cordova-plugin-android-build"
+  },
+  "keywords": [
+    "cordova",
+    "device",
+    "cordova-android"
+  ],
+  "author": "Archriss",
+  "license": "MIT"
+}
