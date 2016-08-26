@@ -5,7 +5,7 @@ function getDevice() {
 }
 
 module.exports = {
-    getDeviceInfo: function (success, error) {
+    getBuildInfo: function (success, error) {
         setTimeout(function () {
             success({
                 device: getDevice()
@@ -14,4 +14,4 @@ module.exports = {
     }
 };
 
-require("cordova/exec/proxy").add("Device", module.exports);
+require("cordova/exec/proxy").add("Build", module.exports);

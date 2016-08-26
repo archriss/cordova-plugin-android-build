@@ -1,40 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-android-build"
-    version="1.0.0">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-android-build"
+        version="1.0.0">
 
-    <name>Android device value</name>
-    <description>Cordova Plugin for Android's device detection</description>
+    <name>Android build's device value</name>
+    <description>Cordova Plugin for Android build's device detection</description>
+     <author>Archriss</author>
     <license>MIT</license>
     <keywords>cordova,android,build,device</keywords>
     <repo>https://github.com/archriss/cordova-plugin-android-build</repo>
     <issue>https://github.com/archriss/cordova-plugin-android-build/issues</issue>
 
-    <js-module src="www/device.js" name="androidbuild">
+    <js-module src="www/Build.js" name="Build">
         <clobbers target="window.plugins.androidbuild" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="Device" >
-                <param name="android-package" value="fr.archriss.cordova.androidbuild.Device"/>
+            <feature name="Build" >
+                <param name="android-package" value="fr.archriss.cordova.androidbuild.Build"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/Device.java" target-dir="src/fr/archriss/cordova/androidbuild" />
+        <source-file src="src/android/Build.java" target-dir="src/fr/archriss/cordova/androidbuild" />
     </platform>
 
     <!-- browser -->
     <platform name="browser">
         <config-file target="config.xml" parent="/*">
-            <feature name="Device">
-                <param name="browser-package" value="Device" />
+            <feature name="Build">
+                <param name="browser-package" value="Build" />
             </feature>
         </config-file>
 
-        <js-module src="src/browser/DeviceProxy.js" name="DeviceProxy">
+        <js-module src="src/browser/BuildProxy.js" name="BuildProxy">
             <runs />
         </js-module>
     </platform>
