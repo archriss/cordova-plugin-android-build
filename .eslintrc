@@ -1,0 +1,14 @@
+{
+    "env" : {
+        "browser" : true
+    },
+    "globals": {
+        "cordova": false
+    },
+    "rules": {
+        "indent": [2, 4],
+        "semi" : [2, "always"],
+        "operator-linebreak": [2, "after"],
+        "no-warning-comments": [1, { "terms": ["todo", "fixme", "xxx"], "location": "start" }]
+    }
+}
